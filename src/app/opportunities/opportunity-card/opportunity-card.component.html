@@ -13,9 +13,9 @@
                         </div>
                         <div class="d-flex primaryColor mt-4">
                             <i class="fa fa-calendar pr-2 mt-1"></i>
-                            <span>{{opportunity.dateTime | date: 'mediumDate'}}</span>
-                            <i class="ml-3 fa fa-clock pr-2 mt-1"></i>
-                            <span>{{opportunity.dateTime | date: 'shortTime'}}</span>
+                            <span class="mx-2">{{opportunity.dateTime | date: 'mediumDate'}}</span>
+                            <span class="mx-2">{{opportunity.jobType}}</span>
+                            <span class="mx-2">{{opportunity.location}}</span>
                         </div>
                     </div>
                     <div class="col-12 mt-4" *ngIf="opportunity.eligibility === 'eligible'">

@@ -1,7 +1,7 @@
 
-<div class="left-nav">
+<div class="left-nav d-none d-xl-block">
     <div class="header-logo">
-        <img src="../../../assets/icons/sunstone-logo.png">
+        <img class="img-responsive" src="../../../assets/icons/sunstone-logo.png">
     </div>
     <ul class="nav-list">
         <li>
@@ -14,4 +14,23 @@
             <a [routerLink]="['/opportunities']" routerLinkActive="active-link"><i class="fas fa-briefcase mr-3"></i>Opportunities</a>
         </li>
     </ul>
+</div>
+
+<div class="d-xl-none">
+    <nav class="navbar navbar-light bg-light">
+        <div class="row w-100">
+            <div class="col-5">
+                <img class="img-responsive" src="../../../assets/icons/sunstone-logo.png">
+            </div>
+            <div class="col-7 notification-bell d-flex align-items-center">
+                <span class="notification">
+                    <i class="fa fa-bell f-22"></i>
+                    <span class="badge">3</span>
+                </span>
+                <span class="ml-4">
+                    <img class="circle-picture" src="../../../assets/icons/user-profile-image.png">
+                </span>
+            </div>
+        </div>
+    </nav>
 </div>
