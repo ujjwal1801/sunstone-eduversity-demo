@@ -11,6 +11,7 @@ export class ContentLayoutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.opportunityFilter = 'new';
   }
 
   setOpportunityFilter = (filter) => {

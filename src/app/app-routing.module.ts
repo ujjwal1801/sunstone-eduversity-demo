@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   { path: 'dashboard', component: AppComponent },
   { path: 'profile', component: AppComponent },
   { path: 'opportunities', component: AppComponent}
