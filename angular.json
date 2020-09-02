@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sunstone-eduversity-demo"
+    }
+  },
+  "defaultProject": "sunstone-eduversity-demo",
+  "cli": {
+    "analytics": false
+  }
 }
