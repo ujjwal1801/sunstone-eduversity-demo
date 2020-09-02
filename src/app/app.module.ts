@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { ContentLayoutComponent } from './content-layout/content-layout.component'
 import { ApplicationsModule } from './applications/applications.module';
+import { OpportunitiesModule } from './opportunities/opportunities.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ApplicationsModule } from './applications/applications.module';
     AppRoutingModule,
     SharedModule,
     UserModule,
-    ApplicationsModule
+    ApplicationsModule,
+    OpportunitiesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,7 +12,8 @@ export class OpportunitiesComponent implements OnInit {
   constructor(public opportunityService: OpportunityService ) { }
 
   ngOnInit(): void {
-    
+    this.opportunities = this.opportunityService.opportunities;
+    console.log('this.opportunities -------> ', this.opportunities);
   }
 
 }

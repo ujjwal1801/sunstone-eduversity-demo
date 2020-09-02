@@ -7,49 +7,19 @@
     background: #fff;
 }
 
-.btn-primary {
-    padding: 12px 20px;
+.btn-disabled{
+    background: #ddd;
+    color: #9B9B9B;
+}
+
+.btnPrimary {
     min-width: 80px;
+    background: #E17908;
+    color: #fff;
 }
 
 .rounded {
   border-radius: 50px !important;
-}
-
-.btn-outline-primary {
-    padding: 12px 20px;
-    min-width: 80px;
-}
-
-.btn-upload {
-    background-color: #ccc;
-    color: #000;
-    display: inline-block;
-    padding: 8px 20px;
-    min-width: 80px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.btn-inputFile {
-    box-sizing: border-box;
-    border: 1px solid #D4D4D4;
-    border-radius: 6px;
-    background-color: #FFFFFF;
-    padding: 5px 10px;
-    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.31);
-    width: fit-content;
-    border: .5px #e2e2e2 solid;
-
-    img {
-        width: 26px;
-        height: 25px;
-        margin-right: 3px;
-    }
-
-    .label {
-        font-size: 12px;
-    }
 }
 
 .btn-transparent {
@@ -58,41 +28,3 @@
     outline: none !important;
     box-shadow: none;
 }
-
-// Circular Button classes start
-.btn-circle {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    padding: 6px 0;
-    font-size: 12px;
-    line-height: 1.428571429;
-    border-radius: 15px;
-  }
-  .btn-circle.btn-lg {
-    width: 50px;
-    height: 50px;
-    padding: 10px 16px;
-    font-size: 18px;
-    line-height: 1.33;
-    border-radius: 25px;
-  }
-  .btn-circle.btn-xl {
-    width: 70px;
-    height: 70px;
-    padding: 10px 16px;
-    font-size: 24px;
-    line-height: 1.33;
-    border-radius: 35px;
-  }
-  .btn-circle.btn-success{
-      background-color:#6bbf4f;
-      border-color: #6bbf4f;
-  }
-  // Circular Button classes end
-  
-  .link {
-      cursor: pointer;
-      color: #0056b3 !important;
-      text-decoration: none !important;
-  }

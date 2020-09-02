@@ -1,1 +1,29 @@
-<p>opportunity-card works!</p>
+<div class="container px-0">
+    <div class="card f-14 b-rad-6">
+        <div class="card-header b-rad-6 p-4" id="opportunity-{{opportunity.id}}" [ngStyle]="{'background-color': opportunity.eligibility === 'eligible' ? '#fff' : '#ddd'}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                        <div class="d-flex orgClass">
+                            <div class="fw-500">{{opportunity.org}}</div>
+                            <div class="pl-1">- {{opportunity.designation}}</div>
+                            <div class="fireIcon primaryColor pl-4">
+                                <i class="fa fa-fire"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex primaryColor mt-4">
+                            <i class="fa fa-calendar pr-2 mt-1"></i>
+                            <span>{{opportunity.dateTime | date: 'mediumDate'}}</span>
+                            <i class="ml-3 fa fa-clock pr-2 mt-1"></i>
+                            <span>{{opportunity.dateTime | date: 'shortTime'}}</span>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4" *ngIf="opportunity.eligibility === 'eligible'">
+                        <button class="btn btnPrimary b-rad-6 mr-3">Apply</button> 
+                        <button class="btn btn-disabled b-rad-6">Not Interested</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class OpportunityService {
-  public opportunity: any = [
+  public opportunities: any = [
     {
       org: 'SBI',
       designation: 'Marketing Analyst',
@@ -12,7 +12,8 @@ export class OpportunityService {
       jobType: 'Full Time',
       location: 'Bangalore',
       compensation: '30,000',
-      eligibility: 'eligible'
+      eligibility: 'eligible',
+      status: 'hot'
     },
     {
       org: 'Amazon',
@@ -21,7 +22,8 @@ export class OpportunityService {
       jobType: 'Full Time',
       location: 'Bangalore',
       compensation: '30,000',
-      eligibility: 'ineligible'
+      eligibility: 'ineligible',
+      status: 'hot'
     },
     {
       org: 'SBI',
@@ -30,7 +32,8 @@ export class OpportunityService {
       jobType: 'Full Time',
       location: 'Bangalore',
       compensation: '30,000',
-      eligibility: 'eligible'
+      eligibility: 'eligible',
+      status: 'normal'
     },
     {
       org: 'SBI',
@@ -39,7 +42,8 @@ export class OpportunityService {
       jobType: 'Full Time',
       location: 'Bangalore',
       compensation: '30,000',
-      eligibility: 'eligible'
+      eligibility: 'eligible',
+      status: 'normal'
     }
   ]
 

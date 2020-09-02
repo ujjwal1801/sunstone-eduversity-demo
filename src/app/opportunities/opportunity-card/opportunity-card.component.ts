@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-opportunity-card',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OpportunityCardComponent implements OnInit {
 
+  @Input('opportunity') opportunity: any;
   constructor() { }
 
   ngOnInit(): void {
