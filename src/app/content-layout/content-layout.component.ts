@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentLayoutComponent implements OnInit {
 
+  public opportunityFilter: any = '';
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  setOpportunityFilter = (filter) => {
+    this.opportunityFilter = filter;
+    console.log('this.opportunityFilter -------> ', this.opportunityFilter);
+  }
 }

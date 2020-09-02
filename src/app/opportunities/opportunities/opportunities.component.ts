@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { OpportunityService } from '../opportunity.service';
 
 @Component({
@@ -8,12 +8,29 @@ import { OpportunityService } from '../opportunity.service';
 })
 export class OpportunitiesComponent implements OnInit {
 
+  @Input('filter') filter: any;
   public opportunities: any;
+  public filteredOpportunities: any;
   constructor(public opportunityService: OpportunityService ) { }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.fnFilterOpportunities(changes.filter.currentValue)
+  }
 
   ngOnInit(): void {
     this.opportunities = this.opportunityService.opportunities;
-    console.log('this.opportunities -------> ', this.opportunities);
+    this.filteredOpportunities = this.opportunities
   }
 
+  fnFilterOpportunities = (filter) => {
+    if(filter === 'eligible'){
+      this.filteredOpportunities = this.opportunities.filter(opp=>opp.eligibility === 'eligible')
+    }
+    else if (filter === 'hot') {
+      this.filteredOpportunities = this.opportunities.filter(opp => opp.status === 'hot')
+    }
+    else{
+      this.filteredOpportunities = this.opportunities;
+    }
+  }
 }

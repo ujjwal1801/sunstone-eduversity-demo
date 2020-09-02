@@ -7,7 +7,7 @@
                         <div class="d-flex orgClass">
                             <div class="fw-500">{{opportunity.org}}</div>
                             <div class="pl-1">- {{opportunity.designation}}</div>
-                            <div class="fireIcon primaryColor pl-4">
+                            <div *ngIf="opportunity.status === 'hot'" class="fireIcon primaryColor pl-4">
                                 <i class="fa fa-fire"></i>
                             </div>
                         </div>
