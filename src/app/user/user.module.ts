@@ -8,6 +8,9 @@ import { UserCardComponent } from './user-card/user-card.component';
   declarations: [UserCardComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    UserCardComponent
   ]
 })
 export class UserModule { }

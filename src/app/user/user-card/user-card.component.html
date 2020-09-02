@@ -1,1 +1,70 @@
-<p>user-card works!</p>
+<div class="container bg-white p-4 mt-3">
+    <div class="row">
+        <div class="col-3">
+            <img [src]="user.profileImage">
+        </div>
+        <div class="col-9">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="primaryColor">{{user.fullName}}</header>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="container f-12 pl-0">
+                            <div class="row pl-0">
+                                <div class="col-xl-6 col-12 mb-3">
+                                    <div class="container pl-0">
+                                        <div class="row pl-0">
+                                            <div class="col-7 text-muted">Sunstone ID</div>
+                                            <div class="col-5">{{user.sunstoneId}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-12 mb-3">
+                                    <div class="container pl-0">
+                                        <div class="row pl-0">
+                                            <div class="col-7 text-muted">Specialization</div>
+                                            <div class="col-5">{{user.specialization}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-12 mb-3">
+                                    <div class="container pl-0">
+                                        <div class="row pl-0">
+                                            <div class="col-7 text-muted">Campus</div>
+                                            <div class="col-5">{{user.campus}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-12 mb-3">
+                                    <div class="container pl-0">
+                                        <div class="row pl-0">
+                                            <div class="col-7 text-muted">Ongoing applications</div>
+                                            <div class="col-5">{{user.ongoingApplications}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-12 mb-3">
+                                    <div class="container pl-0">
+                                        <div class="row pl-0">
+                                            <div class="col-7 text-muted">Batch</div>
+                                            <div class="col-5">{{user.batch}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-12 mb-3">
+                                    <div class="container pl-0">
+                                        <div class="row pl-0">
+                                            <div class="col-7 text-muted">Opportunities for you</div>
+                                            <div class="col-5">{{user.opportunitiesForYou}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

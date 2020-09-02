@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Import variable scss
+@import 'assets/scss/variables.scss';
+@import 'assets/scss/padding-and-margins.scss';
+@import 'assets/scss/font-size.scss';
+@import 'assets/scss/line-height.scss';
+@import 'assets/scss/buttons.scss';
+@import 'assets/scss/font-weight.scss';
+@import 'assets/scss/google-font.scss';
+@import 'assets/scss/scroll.scss';
+
+.primaryColor{
+    color: #e17908;
+}

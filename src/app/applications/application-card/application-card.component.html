@@ -1,1 +1,51 @@
-<p>application-card works!</p>
+<div id="accordion">
+    <div class="card f-14 b-rad-6"  [ngStyle]="{'border-left': application.status === 'active' ? '15px solid #D35E5E' : ''}">
+        <div class="card-header b-rad-6 bg-white p-4" id="application-{{application.id}}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                        <div class="d-flex">
+                            <header class="primaryColor">Test</header>
+                            <span class="pl-1">- {{application.org}} - {{application.designation}}</span>
+                        </div>
+                        <div class="d-flex primaryColor mt-4">
+                            <i class="fa fa-calendar pr-2 mt-1"></i>
+                            <span>{{application.dateTime | date: 'mediumDate'}}</span>
+                            <i class="ml-3 fa fa-clock pr-2 mt-1"></i>
+                            <span>{{application.dateTime | date: 'shortTime'}}</span>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-link float-right" data-toggle="collapse" [attr.data-target]="'#collapse-' + application.id" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fa fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="collapse-{{application.id}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="row f-10">
+                                <div class="col-3 mb-2 text-muted">Question Type</div>
+                                <div class="col-9">{{application.questionType}}</div>
+                                <div class="col-3 mb-2 text-muted">Duration</div>
+                                <div class="col-9">{{application.duration}}</div>
+                                <div class="col-3 text-muted">Venue</div>
+                                <div class="col-9">{{application.venue}}</div>
+                            </div>
+                        </div>
+                        <div class="col-2 position-relative">
+                            <div class="d-flex f-12 position-absolute view-button primaryColor">
+                                <i class="far fa-list-alt mr-2 mt-1"></i>
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
