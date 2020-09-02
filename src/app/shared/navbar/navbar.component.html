@@ -34,3 +34,31 @@
         </div>
     </nav>
 </div>
+
+<div class="d-xl-none">
+    <nav class="navbar bottom-nav fixed-bottom">
+        <ul class="nav-list">
+            <li routerLinkActive="active-link">
+                <a [routerLink]="['/dashboard']" ><i class="fas fa-home mr-sm-3 f-20"></i>
+                    <span class="d-none d-sm-inline">
+                        Dashboard
+                    </span>
+                </a>
+            </li>
+            <li routerLinkActive="active-link">
+                <a [routerLink]="['/profile']" ><i class="fas fa-user mr-sm-3 f-20"></i>
+                    <span class="d-none d-sm-inline">
+                        Profile 
+                    </span>
+                </a>
+            </li>
+            <li routerLinkActive="active-link">
+                <a [routerLink]="['/opportunities']" ><i class="fas fa-briefcase mr-sm-3 f-20"></i>
+                    <span class="d-none d-sm-inline">
+                        Opportunities
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

@@ -73,3 +73,31 @@
     width: 40px;
     border-radius: 50%;
 }
+.bottom-nav{
+    a{
+        color: #fff;
+    }
+    ul{
+        padding: 15px;
+        margin: auto;
+        list-style-type: none;
+        margin-top: 10px;
+    }
+    ul>li{
+        padding: 10px;
+        margin: 10px;
+        display: inline;
+    }
+    .active-link{
+        background: #fff;
+        border-radius: 14px;
+        a{
+          color: #e17908;
+
+        }
+    }
+    background: #e17908;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: #fff;
+}
