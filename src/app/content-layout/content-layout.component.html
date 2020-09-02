@@ -1,3 +1,19 @@
+<div class="container d-xl-none">
+    <div class="row">
+        <div class="col-sm-4 col-12 p-3 " *ngFor="let counter of counters">
+            <div class="card f-14 b-rad-6 px-4 px-sm-0">
+                <div class="card-header bg-white b-rad-6 px-lg-3 px-sm-0 text-center">
+                    <div class="container">
+                        {{counter.title}}
+                    </div>
+                </div>
+                <div class="card-body text-center f-22" [ngStyle]="{'color': counter.color}">
+                    {{counter.counter}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container">
     <app-user-card class="d-none d-xl-block"></app-user-card>
     <div class="row py-4">

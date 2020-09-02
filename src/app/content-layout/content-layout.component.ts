@@ -8,6 +8,23 @@ import { Component, OnInit } from '@angular/core';
 export class ContentLayoutComponent implements OnInit {
 
   public opportunityFilter: any = '';
+  public counters: any = [
+    {
+      title: 'New Opportunities',
+      counter: 24,
+      color: '#72BC08'
+    },
+    {
+      title: 'Hot Opportunities',
+      counter: 24,
+      color: '#D35E5E'
+    },
+    {
+      title: 'Hot Opportunities',
+      counter: 24,
+      color: '#4A90E2'
+    },
+  ]
   constructor() { }
 
   ngOnInit(): void {
